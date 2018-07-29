@@ -7,6 +7,7 @@ response = urllib2.urlopen(url)
 html = response.read()
 release_list = re.findall(r'<a href="[^.].*?">(.*?/)</a>',html)
 print(release_list)
+print("china-dev")
 
 print('---------------ok--')
 for i in xrange(0,len(release_list)):
