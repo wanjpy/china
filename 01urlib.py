@@ -15,4 +15,5 @@ for i in xrange(0,len(release_list)):
     sub_list = re.findall(r'<a href="[^.].*?">(.*?/)</a>', html2)
     print(sub_list)
     print('--------------')
+print("nothing")
 
