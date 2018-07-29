@@ -7,7 +7,7 @@ response = urllib2.urlopen(url)
 html = response.read()
 release_list = re.findall(r'<a href="[^.].*?">(.*?/)</a>',html)
 print(release_list)
-print("origin")
+print("don't want to change")
 
 print('---------------ok--')
 for i in xrange(0,len(release_list)):
