@@ -8,7 +8,7 @@ html = response.read()
 release_list = re.findall(r'<a href="[^.].*?">(.*?/)</a>',html)
 print(release_list)
 
-print('-----------------')
+print('---------------ok--')
 for i in xrange(0,len(release_list)):
     html2 = urllib2.urlopen(url+release_list[i]).read()
     sub_list = re.findall(r'<a href="[^.].*?">(.*?/)</a>', html2)
