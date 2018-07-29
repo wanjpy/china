@@ -6,6 +6,7 @@ url = "http://mirrors.163.com/debian-cd/"
 response = urllib2.urlopen(url)
 html = response.read()
 release_list = re.findall(r'<a href="[^.].*?">(.*?/)</a>',html)
+print("backspace")
 print(release_list)
 
 print('---------------ok--')
